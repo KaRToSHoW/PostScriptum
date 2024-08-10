@@ -1,0 +1,289 @@
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+:root {
+    --background-color: rgb(250, 235, 200);
+    --background-color-second: rgb(5, 13, 77);
+    --color-azure: rgb(177, 247, 255);
+    --color-white: rgb(255, 255, 255);
+    --font-family-Spectral: 'Spectral', serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family-Spectral);
+    color: white;
+}
+
+.header__wrapper {
+    position: absolute;
+    padding: 46px 0 0;
+    display: block;
+    width: 100%;
+}
+
+.header__logo {
+    position: absolute;
+    height: 325px;
+    width: 317px;
+    top: -52px;
+    left: -11px;
+    z-index: 0;
+}
+
+.header__title {
+    font-family: var(--font-family-Spectral);
+    color: var(--color-azure);
+    position: relative;
+    text-align: center;
+    margin-left: 234px;
+    font-size: 3.4rem;
+    word-spacing: 8px;
+    font-weight: 500;
+    max-width: 724px;
+    z-index: 100;
+}
+
+.header__title>span {
+    position: relative;
+    font-size: 2.2rem;
+    word-spacing: 5px;
+    bottom: 16px;
+}
+
+.Initial {
+    background-image: url(/image/Background.svg);
+    background-repeat: no-repeat;
+    background-position: -2px;
+}
+
+.Initial__wrapper {
+    height: 938px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Initial__button {
+    position: relative;
+    border-radius: 29px;
+    box-shadow: 3px 6px 3.3px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 22, 163);
+    color: var(--color-white);
+    font-family: var(--font-family-Spectral);
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 55px;
+    padding: 17px 45px;
+    top: 107px;
+    left: 84px;
+}
+
+
+.Initial__background-ball-1 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 119, 0);
+    width: 236px;
+    height: 236px;
+    left: 923px;
+    top: 80px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Initial__background-ball-2 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 230, 255);
+    width: 238px;
+    height: 238px;
+    left: 1172px;
+    top: 88px;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Initial__background-ball-3 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(26, 0, 255);
+    width: 180px;
+    height: 180px;
+    left: 1215px;
+    top: 274px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Initial__background-ball-4 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 85, 0);
+    width: 285px;
+    height: 285px;
+    left: 242px;
+    top: 308px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Initial__background-ball-5 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(30, 205, 82);
+    width: 199px;
+    height: 199px;
+    left: 445px;
+    top: 481px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Initial__background-ball-6 {
+    background: rgb(52, 135, 0);
+    width: 294px;
+    height: 294px;
+    left: 952px;
+    top: 471px;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+}
+.Initial__background-ball-7 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(34, 78, 0);
+    width: 202px;
+    height: 206px;
+    left: 108px;
+    top: 635px;
+    border-radius: 50%;
+    position: absolute;
+}
+.Initial__background-ball-8 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 136, 0);
+    width: 265px;
+    height: 265px;
+    left: 333px;
+    top: 675px;
+    border-radius: 50%;
+    position: absolute;
+}
+.Initial__background-ball-9 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 28, 255);
+    width: 236px;
+    height: 236px;
+    left: 874px;
+    top: 692px;
+    border-radius: 50%;
+    position: absolute;
+}
+.Initial__background-ball-10 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(2, 8, 51);
+    width: 120px;
+    height: 240px;
+    left: 1363px;
+    top: 754px;
+    transform: translate(-50%, -50%);
+    border-radius: 150px 0 0 150px;
+    position: absolute;
+}
