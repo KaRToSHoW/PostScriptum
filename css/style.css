@@ -124,7 +124,7 @@ body {
     width: 317px;
     top: -52px;
     left: -11px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .header__title {
@@ -176,6 +176,7 @@ body {
     padding: 17px 45px;
     top: 107px;
     left: 84px;
+    cursor: pointer;
 }
 
 
@@ -291,15 +292,10 @@ body {
     position: absolute;
 }
 
-.individual {
-    border-top: 7px solid;
-    border-bottom: 7px solid;
-    border-color: rgb(217, 217, 217);
-}
 
 .individual__wrapper {
     text-align: center;
-    padding-top: 83px;
+    padding-top: 90px;
     padding-bottom: 21px;
 }
 
@@ -374,14 +370,9 @@ body {
 
 /* ВРЕМЕННО */
 
-.group {
-    border-bottom: 7px solid;
-    border-color: rgb(217, 217, 217);
-}
-
 .group__wrapper {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 29px;
 }
 
@@ -453,7 +444,85 @@ body {
 .group__item:nth-child(3)>.group__cost-one {
     margin-top: 3px;
 }
-/* ВРЕМЕННО */
-.contact__title{
 
+/* ВРЕМЕННО */
+
+.contact__wrapper {
+    text-align: center;
+    padding-top: 67px;
+    padding-bottom: 50px;
+}
+
+.contact__title {
+    color: rgb(0, 8, 94);
+    font-family: var(--font-family-Spectral);
+    font-size: 4.71rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 140px;
+}
+
+.contact__item {
+    width: 105px;
+    height: 105px;
+    background-color: gray;
+    border-radius: 50px
+}
+
+.contact__subtitle {
+    color: rgb(0, 8, 94);
+    font-family: var(--font-family-Spectral);
+    font-size: 5.01rem;
+    font-weight: 500;
+    line-height: 4.6rem;
+    margin-top: 66px;
+}
+
+.contact__subtitle>span {
+    display: block;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.contact__label {
+    margin-bottom: 40px;
+}
+
+.contact__input {
+    border-radius: 99px;
+    padding: 15px 23px 15px 28px;
+    background: rgb(217, 217, 217);
+    min-width: 580px;
+    color: rgba(0, 0, 0, 0.68);
+    font-family: var(--font-family-Spectral);
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+    text-align: left;
+}
+
+.contact__button {
+    border-radius: 82px;
+    background: rgb(255, 85, 0);
+    text-align: center;
+    padding: 16px 76px;
+    color: var(--color-white);
+    font-family: var(--font-family-Spectral);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.6rem;
+    margin-top: 9px;
 }
