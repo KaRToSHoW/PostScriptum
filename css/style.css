@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Spectral';
     src: url('/fonts/Spectral-Regular.ttf') format('truetype');
@@ -246,6 +245,7 @@ body {
     border-radius: 50%;
     position: absolute;
 }
+
 .Initial__background-ball-7 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(34, 78, 0);
@@ -256,6 +256,7 @@ body {
     border-radius: 50%;
     position: absolute;
 }
+
 .Initial__background-ball-8 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(255, 136, 0);
@@ -266,6 +267,7 @@ body {
     border-radius: 50%;
     position: absolute;
 }
+
 .Initial__background-ball-9 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(0, 28, 255);
@@ -276,6 +278,7 @@ body {
     border-radius: 50%;
     position: absolute;
 }
+
 .Initial__background-ball-10 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(2, 8, 51);
@@ -286,4 +289,171 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 150px 0 0 150px;
     position: absolute;
+}
+
+.individual {
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    border-color: rgb(217, 217, 217);
+}
+
+.individual__wrapper {
+    text-align: center;
+    padding-top: 83px;
+    padding-bottom: 21px;
+}
+
+.individual__title {
+    color: rgb(0, 8, 94);
+    font-family: var(--font-family-Spectral);
+    font-size: 4.71rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.individual__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 26px 110px;
+}
+
+.individual__item:nth-child(1) {
+    background-color: orange;
+    padding: 68px 56px 174px 56px;
+    margin-top: 50px;
+    max-height: 637px;
+}
+
+.individual__item:nth-child(2) {
+    background-color: green;
+    padding: 87px 84px 151px 84px;
+}
+
+.individual__item:nth-child(3) {
+    background-color: blue;
+    padding: 68px 56px 100px 56px;
+    margin-top: 50px;
+    max-height: 637px;
+}
+
+.individual__item {
+    color: rgb(250, 235, 200);
+    font-family: var(--font-family-Spectral);
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 7.3rem;
+    text-align: center;
+    border-radius: 31px;
+}
+
+.individual__item:nth-child(1)>.individual__main-cost {
+    margin-top: 250px;
+}
+
+.individual__item:nth-child(2)>.individual__main-cost {
+    margin-top: 50px;
+}
+
+.individual__item:nth-child(2)>.individual__cost-sell {
+    margin-top: 155px;
+}
+
+.individual__item:nth-child(3)>.individual__main-cost {
+    margin-top: 20px;
+}
+
+.individual__item:nth-child(3)>.individual__cost-sell {
+    margin-top: 156px;
+}
+
+.individual__item:nth-child(3)>.individual__cost-one {
+    margin-top: 3px;
+}
+
+/* ВРЕМЕННО */
+
+.group {
+    border-bottom: 7px solid;
+    border-color: rgb(217, 217, 217);
+}
+
+.group__wrapper {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 29px;
+}
+
+.group__title {
+    color: rgb(0, 8, 94);
+    font-family: var(--font-family-Spectral);
+    font-size: 4.71rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.group__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 26px 110px;
+}
+
+.group__item:nth-child(1) {
+    background-color: orange;
+    padding: 68px 56px 174px 56px;
+    margin-top: 50px;
+    max-height: 637px;
+}
+
+.group__item:nth-child(2) {
+    background-color: green;
+    padding: 87px 84px 151px 84px;
+}
+
+.group__item:nth-child(3) {
+    background-color: blue;
+    padding: 68px 56px 100px 56px;
+    margin-top: 50px;
+    max-height: 637px;
+}
+
+.group__item {
+    color: rgb(250, 235, 200);
+    font-family: var(--font-family-Spectral);
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 7.3rem;
+    text-align: center;
+    border-radius: 31px;
+}
+
+.group__item:nth-child(1)>.group__main-cost {
+    margin-top: 250px;
+}
+
+.group__item:nth-child(2)>.group__main-cost {
+    margin-top: 50px;
+}
+
+.group__item:nth-child(2)>.group__cost-sell {
+    margin-top: 155px;
+}
+
+.group__item:nth-child(3)>.group__main-cost {
+    margin-top: 20px;
+}
+
+.group__item:nth-child(3)>.group__cost-sell {
+    margin-top: 156px;
+}
+
+.group__item:nth-child(3)>.group__cost-one {
+    margin-top: 3px;
+}
+/* ВРЕМЕННО */
+.contact__title{
+
 }
