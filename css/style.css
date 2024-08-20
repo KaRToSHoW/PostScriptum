@@ -177,8 +177,35 @@ body {
     top: 107px;
     left: 84px;
     cursor: pointer;
+
 }
 
+.Initial__button::after {
+    content: "";
+    position: absolute;
+    background-image: url(/image/Arrow-1.svg);
+    width: 63px;
+    height: 83px;
+    bottom: 100px;
+    right: 60px;
+}
+
+.Initial__text-button {
+    position: absolute;
+    transform: rotate(-10deg);
+    right: 267px;
+    top: 334px;
+}
+
+.Initial__text-button>p {
+    color: rgb(255, 85, 0);
+    font-family: Spectral;
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    text-align: center;
+    max-width: 340px;
+}
 
 .Initial__background-ball-1 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -189,6 +216,107 @@ body {
     top: 80px;
     border-radius: 50%;
     position: absolute;
+}
+
+.Initial__ball-text-1 {
+    margin-top: 37px;
+    color: rgb(250, 235, 200);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+}
+
+.Initial__ball-text-2 {
+    margin-top: 80px;
+    color: rgb(0, 28, 255);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+}
+
+.Initial__ball-text-3 {
+    color: rgb(177, 247, 255);
+    font-family: Spectral;
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    margin-top: 51px;
+    text-align: center;
+}
+
+.Initial__ball-text-4 {
+    margin-top: 26px;
+    color: rgb(250, 235, 200);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.Initial__ball-text-5 {
+    color: rgb(22, 56, 0);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.3rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 168px;
+    margin-left: 16px;
+}
+
+.Initial__ball-text-6 {
+    color: rgb(157, 253, 98);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+    margin-top: 31px;
+    max-width: 250px;
+    margin-left: 19px;
+}
+
+.Initial__ball-text-7 {
+    color: rgb(157, 253, 98);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.Initial__ball-text-8 {
+    color: rgb(250, 235, 200);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+    margin-top: 60px;
+    max-width: 185px;
+    margin-left: 35px;
+}
+
+.Initial__ball-text-9 {
+    color: rgb(177, 247, 255);
+    font-family: Spectral;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.Initial__background-ball-10>a>img {
+    margin-top: 67px;
+    border-radius: 7px;
 }
 
 .Initial__background-ball-2 {
@@ -316,26 +444,26 @@ body {
 }
 
 .individual__item:nth-child(1) {
-    background-color: orange;
+    background-color: rgb(255, 119, 0);
     padding: 68px 56px 174px 56px;
     margin-top: 50px;
     max-height: 637px;
 }
 
 .individual__item:nth-child(2) {
-    background-color: green;
+    background-color: rgb(13, 64, 28);
     padding: 87px 84px 151px 84px;
 }
 
 .individual__item:nth-child(3) {
-    background-color: blue;
+    background-color: rgb(0, 28, 255);
     padding: 68px 56px 100px 56px;
     margin-top: 50px;
     max-height: 637px;
 }
 
 .individual__item {
-    color: rgb(250, 235, 200);
+    color: rgb(255, 249, 234);
     font-family: var(--font-family-Spectral);
     font-size: 4.8rem;
     font-weight: 400;
@@ -370,7 +498,7 @@ body {
 
 /* ВРЕМЕННО */
 
-.group__wrapper {
+/* .group__wrapper {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 29px;
@@ -443,7 +571,7 @@ body {
 
 .group__item:nth-child(3)>.group__cost-one {
     margin-top: 3px;
-}
+} */
 
 /* ВРЕМЕННО */
 
@@ -515,6 +643,7 @@ body {
 }
 
 .contact__button {
+    position: relative;
     border-radius: 82px;
     background: rgb(255, 85, 0);
     text-align: center;
