@@ -118,7 +118,7 @@ body {
     width: 100%;
 }
 
-.header__logo {
+.header__img-logo{
     position: absolute;
     height: 325px;
     width: 317px;
@@ -147,13 +147,15 @@ body {
     bottom: 16px;
 }
 
-.Initial {
+.Initial{
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+.Initial__wrapper {
     background-image: url(/image/Background.svg);
     background-repeat: no-repeat;
     background-position: -2px;
-}
-
-.Initial__wrapper {
+    background-size: contain;
     height: 938px;
     text-align: center;
     position: relative;
@@ -161,6 +163,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .Initial__button {
@@ -207,6 +211,31 @@ body {
     max-width: 340px;
 }
 
+.Initial__Popcorn-pinguin {
+    position: absolute;
+    top: 250px;
+    right: 250px;
+}
+
+.Initial__Computer-pinguin {
+    position: absolute;
+    top: 296px;
+    right: 620px;
+}
+
+.Initial__Boss-pinguin {
+    position: absolute;
+    bottom: 20px;
+    right: 140px;
+}
+
+.Initial__Two-pinguins {
+    position: absolute;
+    bottom: 8px;
+    left: 531px;
+    z-index: 2;
+}
+
 .Initial__background-ball-1 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(255, 119, 0);
@@ -249,6 +278,7 @@ body {
 }
 
 .Initial__ball-text-4 {
+    position: relative;
     margin-top: 26px;
     color: rgb(250, 235, 200);
     font-family: Spectral;
@@ -256,6 +286,32 @@ body {
     font-weight: 600;
     line-height: 3.5rem;
     text-align: center;
+}
+
+.Initial__ball-text-4::before {
+    position: absolute;
+    content: "";
+    background-image: url(/image/Checkmark-1.svg);
+    width: 31px;
+    height: 136px;
+    background-repeat: space;
+    left: 22px;
+    top: 37px;
+}
+
+.Initial__ball-text-4::after {
+    position: absolute;
+    content: "";
+    border: 3px solid rgb(0, 8, 94);
+    border-left: 0;
+    border-right: 0;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    height: 38px;
+    width: 130px;
+    bottom: 14px;
+    right: 80px;
+    z-index: 40;
 }
 
 .Initial__ball-text-5 {
@@ -268,6 +324,10 @@ body {
     margin-top: 20px;
     max-width: 168px;
     margin-left: 16px;
+}
+
+.Initial__ball-text-5>span {
+    color: rgb(43, 103, 2);
 }
 
 .Initial__ball-text-6 {
@@ -411,13 +471,14 @@ body {
 .Initial__background-ball-10 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(2, 8, 51);
-    width: 120px;
-    height: 240px;
-    left: 1303px;
+    width: 240px; /* Устанавливаем ширину и высоту одинаковыми */
+    height: 240px; 
+    left: 1303px; /* Оставляем позиционирование */
     top: 754px;
     transform: translate(-50%, -50%);
-    border-radius: 150px 0 0 150px;
+    border-radius: 50%; /* Превращаем элемент в круг */
     position: absolute;
+    overflow: visible;
 }
 
 
@@ -448,18 +509,51 @@ body {
     padding: 68px 56px 174px 56px;
     margin-top: 50px;
     max-height: 637px;
+    position: relative;
+}
+
+.individual__item:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    background-image: url(/image/Time-1.svg);
+    top: -30px;
+    right: -34px;
+    width: 161px;
+    height: 259px;
 }
 
 .individual__item:nth-child(2) {
+    position: relative;
     background-color: rgb(13, 64, 28);
-    padding: 87px 84px 151px 84px;
+    padding: 87px 84px 20px 84px;
+}
+
+.individual__item:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    background-image: url(/image/WoW-pinguin.svg);
+    width: 91px;
+    height: 157px;
+    bottom: 0px;
+    right: 26px;
 }
 
 .individual__item:nth-child(3) {
     background-color: rgb(0, 28, 255);
-    padding: 68px 56px 100px 56px;
+    padding: 68px 56px 65px 56px;
     margin-top: 50px;
     max-height: 637px;
+    position: relative;
+}
+
+.individual__item:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    background-image: url(/image/Time-2.svg);
+    width: 161px;
+    height: 157px;
+    top: -17px;
+    left: -22px;
 }
 
 .individual__item {
@@ -482,6 +576,18 @@ body {
 
 .individual__item:nth-child(2)>.individual__cost-sell {
     margin-top: 155px;
+    position: relative;
+}
+
+.individual__item:nth-child(2)>.individual__cost-sell::after {
+    position: absolute;
+    content: "";
+    border: 3px solid red;
+    border-radius: 10px;
+    width: 217px;
+    transform: rotate(-7.39deg);
+    bottom: 34px;
+    right: 9px;
 }
 
 .individual__item:nth-child(3)>.individual__main-cost {
@@ -490,10 +596,43 @@ body {
 
 .individual__item:nth-child(3)>.individual__cost-sell {
     margin-top: 156px;
+    position: relative;
+}
+
+.individual__item:nth-child(3)>.individual__cost-sell::after {
+    position: absolute;
+    content: "";
+    border: 3px solid red;
+    border-radius: 10px;
+    width: 217px;
+    transform: rotate(-7.39deg);
+    bottom: 34px;
+    right: 9px;
 }
 
 .individual__item:nth-child(3)>.individual__cost-one {
     margin-top: 3px;
+}
+
+.individual__time {
+    margin-top: 36px;
+    font-family: Spectral;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.9rem;
+    text-align: center;
+}
+
+.individual__item:nth-child(1)>.individual__time {
+    margin-top: 106px;
+}
+
+.individual__item:nth-child(2)>.individual__time {
+    margin-top: 100px;
+}
+
+.individual__item:nth-child(3)>.individual__time {
+    margin-top: 33px;
 }
 
 /* ВРЕМЕННО */
@@ -601,21 +740,35 @@ body {
 .contact__item {
     width: 105px;
     height: 105px;
-    background-color: gray;
-    border-radius: 50px
+    background-color: white;
+    border-radius: 60px;
+    position: relative;
+}
+
+.contact__item:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    background-image: url(/image/Happy-pinguin.svg);
+    width: 126px;
+    height: 135px;
+    top: 72px;
+    left: -98px;
 }
 
 .contact__subtitle {
+    display: block;
     color: rgb(0, 8, 94);
     font-family: var(--font-family-Spectral);
     font-size: 5.01rem;
     font-weight: 500;
     line-height: 4.6rem;
-    margin-top: 66px;
+    max-width: 867px;
+    margin: 0 auto;
 }
 
 .contact__subtitle>span {
     display: block;
+    margin: 35px 0;
 }
 
 .contact__form {
@@ -632,14 +785,26 @@ body {
 .contact__input {
     border-radius: 99px;
     padding: 15px 23px 15px 28px;
-    background: rgb(217, 217, 217);
+    background: rgb(255, 119, 0);
     min-width: 580px;
-    color: rgba(0, 0, 0, 0.68);
+    color: rgb(255, 249, 234);
     font-family: var(--font-family-Spectral);
     font-size: 3.6rem;
     font-weight: 400;
     line-height: 4.2rem;
     text-align: left;
+}
+
+.contact__input::placeholder {
+    color: rgb(255, 249, 234);
+}
+
+.contact__label:nth-child(2)>.contact__input {
+    background-color: rgb(0, 28, 255);
+}
+
+.contact__label:nth-child(3)>.contact__input {
+    background-color: rgb(1, 75, 12);
 }
 
 .contact__button {
@@ -654,4 +819,16 @@ body {
     font-weight: 500;
     line-height: 4.6rem;
     margin-top: 9px;
+}
+
+/* Для экранов с шириной 1440px и выше */
+@media (min-width: 1440px) {
+    .header__wrapper,
+    .Initial,
+    .individual,
+    .contact,
+    .header {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }
