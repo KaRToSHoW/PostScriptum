@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Лучший сайт в интернете">
+    <meta property="og:description" content="Посетите лучший сайт в интернете и познайте тщетность бытия">
+    <meta property="og:image" content="http://best-site/thumbnail.jpg">
+    <meta property="og:url" content="http://best-site/index.htm">
+    <link rel="icon" href="/image/Logo.svg" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -23,7 +28,7 @@
     <main>
         <section class="Initial">
             <div class="Initial__wrapper">
-                <button class="Initial__button ">Поехали?</button>
+                <a href="#form" class="Initial__button ">Поехали?</a>
                 <div class="Initial__text-button">
                     <p>Эта кнопка для тех, кто хочет записаться и узнать более подробную информацию.</p>
                 </div>
@@ -93,45 +98,24 @@
                 </ul>
             </div>
         </section>
-        <!-- чтобы было временно -->
-        <!-- <section class="group">
-            <div class="group__wrapper">
-                <h2 class="group__title">Групповые занятия</h2>
-                <ul class="group__list">
-                    <li class="group__item">
-                        <p class="group__lesson">1 занятие</p>
-                        <p class="group__main-cost">2100 руб.</p>
-                    </li>
-                    <li class="group__item">
-                        <p class="group__lesson">8 занятий</p>
-                        <p class="group__main-cost">14000 руб.</p>
-                        <p class="group__cost-sell">2100 руб.</p>
-                        <p class="group__cost-one">1750 руб.</p>
-                    </li>
-                    <li class="group__item">
-                        <p class="group__lesson">4 занятия</p>
-                        <p class="group__main-cost">7600 руб.</p>
-                        <p class="group__cost-sell">2100 руб.</p>
-                        <p class="group__cost-one">1750 руб.</p>
-                    </li>
-                </ul>
-            </div>
-        </section> -->
-        <!-- Чтобы было временно -->
+
         <section class="contact">
             <div class="contact__wrapper">
                 <h2 class="contact__title">Напишите нам в соцсетях</h2>
                 <ul class="contact__list">
-                    <li class="contact__item"><a href="#"><img src="/image/telegram-svgrepo-com.svg" alt="telegramm"></a></li>
-                    <li class="contact__item"><a href="#"><img src="/image/whatsapp-color-svgrepo-com.svg" alt="whatsapp"></a></li>
+                    <li class="contact__item"><a href="https://t.me/post_scriptumfr"><img
+                                src="/image/telegram-svgrepo-com.svg" alt="telegramm"></a></li>
+                    <li class="contact__item"><a href="#"><img src="/image/whatsapp-color-svgrepo-com.svg"
+                                alt="whatsapp"></a></li>
                 </ul>
-                <p class="contact__subtitle"><span>ну или</span>оставьте заявку на сайте, мы с Вами свяжемся в ближайшее время</p>
-                <form class="contact__form">
-                    <label class="contact__label"><input class="contact__input" type="text" placeholder="Имя и фамилия"
-                            required></label>
-                    <label class="contact__label"><input class="contact__input" type="tel" placeholder="Номер телефона"
-                            required></label>
-                    <label class="contact__label"><input class="contact__input" type="email"
+                <p class="contact__subtitle"><span>ну или</span>оставьте заявку на сайте, мы с Вами свяжемся в ближайшее
+                    время</p>
+                <form id="form" action="./mail.php" class="contact__form" method="post">
+                    <label class="contact__label"><input class="contact__input" type="text" name="name"
+                            placeholder="Имя и фамилия" required></label>
+                    <label class="contact__label"><input class="contact__input" type="tel" name="phone"
+                            placeholder="Номер телефона" required></label>
+                    <label class="contact__label"><input class="contact__input" type="email" name="email"
                             placeholder="Электронная почта" required></label>
                     <button class="contact__button" type="submit">Отправить</button>
                 </form>
