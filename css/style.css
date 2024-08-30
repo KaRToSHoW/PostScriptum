@@ -897,14 +897,26 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
-@media (min-width: 1440px){
+
+@media (min-width: 1440px) {
     .Initial__background-ball-10>a>img {
         margin-top: 68px;
         border-radius: 7px;
         margin-right: 80px;
     }
 }
+
+@media (min-width: 1540px) {
+    .Initial__background-ball-10>a>img {
+        margin-top: 48px;
+        border-radius: 7px;
+        margin-right: 10px;
+        width: 130px;
+    }
+}
+
 @media (max-width: 1440px) {
+
     .header__wrapper,
     .Initial,
     .individual,
@@ -1723,7 +1735,7 @@ main {
     .Initial__background-ball-10>a>img {
         margin-top: 43px;
         border-radius: 7px;
-        margin-right: 10px;
+        margin-right: 0px;
     }
 
     .Initial__background-ball-2 {
@@ -3045,7 +3057,7 @@ main {
     .Initial__background-ball-10>a>img {
         margin-top: 25px;
         border-radius: 7px;
-        margin-right: 5px;
+        margin-right: 0px;
     }
 
     .Initial__background-ball-2 {
@@ -3421,25 +3433,30 @@ main {
         line-height: 4.6rem;
         margin-top: 9px;
     }
-    .individual__lesson{
+
+    .individual__lesson {
         font-size: 2rem;
         width: max-content;
     }
-    .individual__main-cost{
+
+    .individual__main-cost {
         font-size: 2rem;
         width: max-content;
     }
-    .individual__cost-sell{
+
+    .individual__cost-sell {
         font-size: 2rem;
         width: max-content;
     }
-    .individual__cost-one{
+
+    .individual__cost-one {
         font-size: 2rem;
         width: max-content;
     }
 }
 
 @media (min-width: 375px) and (max-width:425px) {
+
     .header__wrapper,
     .Initial,
     .individual,
@@ -3723,7 +3740,7 @@ main {
     .Initial__background-ball-10>a>img {
         margin-top: 25px;
         border-radius: 7px;
-        margin-right: 5px;
+        margin-right: 1px;
     }
 
     .Initial__background-ball-2 {
@@ -4101,25 +4118,31 @@ main {
         font-weight: 500;
         line-height: 4.6rem;
         margin-top: 9px;
-        
+
     }
-    .individual__lesson{
+
+    .individual__lesson {
         font-size: 2.2rem;
         width: max-content;
     }
-    .individual__main-cost{
+
+    .individual__main-cost {
         font-size: 2.2rem;
         width: max-content;
     }
-    .individual__cost-sell{
+
+    .individual__cost-sell {
         font-size: 2.2rem;
         width: max-content;
     }
-    .individual__cost-one{
+
+    .individual__cost-one {
         font-size: 2.2rem;
         width: max-content;
     }
-}@media (min-width: 320px) and (max-width:375px) {
+}
+
+@media (min-width: 320px) and (max-width:375px) {
 
 
     .header__wrapper,
@@ -4223,7 +4246,7 @@ main {
         position: absolute;
         transform: rotate(339deg);
         right: -31px;
-        top: 550px;
+        top: 570px;
     }
 
     .Initial__text-button>p {
@@ -4245,21 +4268,21 @@ main {
 
     .Initial__Computer-pinguin {
         position: absolute;
-        top: 189px;
-        right: 139px;
-        height: 98px;
+        top: 198px;
+        right: 97px;
+        height: 90px;
     }
 
     .Initial__Boss-pinguin {
         position: absolute;
-        bottom: 110px;
+        bottom: 10px;
         right: 10px;
         height: 105px;
     }
 
     .Initial__Two-pinguins {
         position: absolute;
-        bottom: 250px;
+        bottom: 260px;
         left: 6px;
         z-index: 2;
     }
@@ -4269,8 +4292,8 @@ main {
         background: rgb(255, 119, 0);
         width: 140px;
         height: 140px;
-        left: 205px;
-        top: 48px;
+        left: 181px;
+        top: 37px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4405,7 +4428,7 @@ main {
     .Initial__background-ball-10>a>img {
         margin-top: 25px;
         border-radius: 7px;
-        margin-right: 5px;
+        margin-right: 0px;
     }
 
     .Initial__background-ball-2 {
@@ -4413,8 +4436,8 @@ main {
         background: rgb(0, 230, 255);
         width: 125px;
         height: 125px;
-        left: 8px;
-        top: 639px;
+        left: 196px;
+        top: 808px;
         z-index: 1;
         border-radius: 50%;
         position: absolute;
@@ -4425,8 +4448,8 @@ main {
         background: rgb(26, 0, 255);
         width: 155px;
         height: 155px;
-        left: 27px;
-        top: 281px;
+        left: 0px;
+        top: 248px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4447,8 +4470,8 @@ main {
         background: rgb(30, 205, 82);
         width: 155px;
         height: 155px;
-        left: 5px;
-        top: 442px;
+        left: 3px;
+        top: 429px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4457,8 +4480,8 @@ main {
         background: rgb(52, 135, 0);
         width: 210px;
         height: 210px;
-        left: 164px;
-        top: 847px;
+        left: 119px;
+        top: 910px;
         z-index: 1;
         border-radius: 50%;
         position: absolute;
@@ -4469,8 +4492,8 @@ main {
         background: rgb(34, 78, 0);
         width: 150px;
         height: 150px;
-        left: 160px;
-        top: 390px;
+        left: 156px;
+        top: 368px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4481,7 +4504,7 @@ main {
         width: 170px;
         height: 170px;
         left: -1px;
-        top: 815px;
+        top: 805px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4491,8 +4514,8 @@ main {
         background: rgb(0, 28, 255);
         width: 183px;
         height: 183px;
-        left: 95px;
-        top: 1007px;
+        left: 65px;
+        top: 1078px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4503,9 +4526,9 @@ main {
         width: 145px;
         /* Устанавливаем ширину и высоту одинаковыми */
         height: 145px;
-        left: 248px;
+        left: 194px;
         /* Оставляем позиционирование */
-        top: 258px;
+        top: 252px;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         /* Превращаем элемент в круг */
