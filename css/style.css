@@ -3277,7 +3277,7 @@ main {
         width: 137px;
         transform: rotate(-7.39deg);
         bottom: 19px;
-        right: -9px;
+        right: -23px;
     }
 
     .individual__item:nth-child(3)>.individual__main-cost {
@@ -3524,7 +3524,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         flex-wrap: wrap;
     }
 
@@ -3539,8 +3539,8 @@ main {
         font-weight: 600;
         line-height: 55px;
         padding: 4px 39px;
-        top: 107px;
-        left: 31px;
+        top: -53px;
+        left: 0px;
         cursor: pointer;
     }
 
@@ -3557,8 +3557,8 @@ main {
     .Initial__text-button {
         position: absolute;
         transform: rotate(339deg);
-        right: -31px;
-        top: 550px;
+        right: -1px;
+        top: 1000px;
     }
 
     .Initial__text-button>p {
@@ -3587,14 +3587,14 @@ main {
 
     .Initial__Boss-pinguin {
         position: absolute;
-        bottom: 110px;
-        right: 10px;
-        height: 105px;
+        bottom: 360px;
+        right: 70px;
+        height: 115px;
     }
 
     .Initial__Two-pinguins {
         position: absolute;
-        bottom: 250px;
+        bottom: 370px;
         left: 6px;
         z-index: 2;
     }
@@ -3748,8 +3748,8 @@ main {
         background: rgb(0, 230, 255);
         width: 125px;
         height: 125px;
-        left: 8px;
-        top: 639px;
+        left: -22px;
+        top: 599px;
         z-index: 1;
         border-radius: 50%;
         position: absolute;
@@ -3793,7 +3793,7 @@ main {
         width: 210px;
         height: 210px;
         left: 164px;
-        top: 847px;
+        top: 547px;
         z-index: 1;
         border-radius: 50%;
         position: absolute;
@@ -3816,7 +3816,7 @@ main {
         width: 170px;
         height: 170px;
         left: -1px;
-        top: 815px;
+        top: 695px;
         border-radius: 50%;
         position: absolute;
     }
@@ -3826,8 +3826,8 @@ main {
         background: rgb(0, 28, 255);
         width: 183px;
         height: 183px;
-        left: 95px;
-        top: 1007px;
+        left: 205px;
+        top: 717px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4212,7 +4212,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         flex-wrap: wrap;
     }
 
@@ -4227,8 +4227,8 @@ main {
         font-weight: 600;
         line-height: 55px;
         padding: 4px 39px;
-        top: 107px;
-        left: 31px;
+        top: -23px;
+        left: 0px;
         cursor: pointer;
     }
 
@@ -4246,7 +4246,7 @@ main {
         position: absolute;
         transform: rotate(339deg);
         right: -31px;
-        top: 570px;
+        top: 1040px;
     }
 
     .Initial__text-button>p {
@@ -4275,14 +4275,14 @@ main {
 
     .Initial__Boss-pinguin {
         position: absolute;
-        bottom: 10px;
+        bottom: 310px;
         right: 10px;
         height: 105px;
     }
 
     .Initial__Two-pinguins {
         position: absolute;
-        bottom: 260px;
+        bottom: 490px;
         left: 6px;
         z-index: 2;
     }
@@ -4292,8 +4292,8 @@ main {
         background: rgb(255, 119, 0);
         width: 140px;
         height: 140px;
-        left: 181px;
-        top: 37px;
+        left: 180px;
+        top: 42px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4437,7 +4437,7 @@ main {
         width: 125px;
         height: 125px;
         left: 196px;
-        top: 808px;
+        top: 508px;
         z-index: 1;
         border-radius: 50%;
         position: absolute;
@@ -4481,7 +4481,7 @@ main {
         width: 210px;
         height: 210px;
         left: 119px;
-        top: 910px;
+        top: 690px;
         z-index: 1;
         border-radius: 50%;
         position: absolute;
@@ -4504,7 +4504,7 @@ main {
         width: 170px;
         height: 170px;
         left: -1px;
-        top: 805px;
+        top: 585px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4514,8 +4514,8 @@ main {
         background: rgb(0, 28, 255);
         width: 183px;
         height: 183px;
-        left: 65px;
-        top: 1078px;
+        left: 5px;
+        top: 838px;
         border-radius: 50%;
         position: absolute;
     }
@@ -4645,10 +4645,10 @@ main {
         content: "";
         border: 2px solid red;
         border-radius: 10px;
-        width: 137px;
+        width: 127px;
         transform: rotate(-7.39deg);
-        bottom: 19px;
-        right: -9px;
+        bottom: 15px;
+        right: -14px;
     }
 
     .individual__item:nth-child(3)>.individual__main-cost {
