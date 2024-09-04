@@ -926,11 +926,7 @@ main {
         margin: 0 auto;
     }
 
-    body {
-        background-color: var(--background-color);
-        font-family: var(--font-family-Spectral);
-        color: white;
-    }
+ 
 
     .header__wrapper {
         position: absolute;
@@ -1463,11 +1459,7 @@ main {
         margin: 0 auto;
     }
 
-    body {
-        background-color: var(--background-color);
-        font-family: var(--font-family-Spectral);
-        color: white;
-    }
+  
 
     .header__wrapper {
         position: absolute;
@@ -2124,11 +2116,7 @@ main {
         margin: 0 auto;
     }
 
-    body {
-        background-color: var(--background-color);
-        font-family: var(--font-family-Spectral);
-        color: white;
-    }
+
 
     .header__wrapper {
         position: absolute;
@@ -2785,11 +2773,6 @@ main {
         margin: 0 auto;
     }
 
-    body {
-        background-color: var(--background-color);
-        font-family: var(--font-family-Spectral);
-        color: white;
-    }
 
     .header__wrapper {
         position: absolute;
@@ -3467,9 +3450,7 @@ main {
     }
 
     body {
-        background-color: var(--background-color);
-        font-family: var(--font-family-Spectral);
-        color: white;
+
         padding-top: 1;
     }
 
@@ -4155,9 +4136,7 @@ main {
     }
 
     body {
-        background-color: var(--background-color);
-        font-family: var(--font-family-Spectral);
-        color: white;
+        
         padding-top: 1;
     }
 
@@ -4807,4 +4786,29 @@ main {
         line-height: 4.6rem;
         margin-top: 9px;
     }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+     text-align: center;
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 8, 94);
+    font-family: var(--font-family-Spectral);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.footer__text{
+    color: rgb(0, 8, 94);
+    font-family: var(--font-family-Spectral);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
